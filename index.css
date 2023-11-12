@@ -1,0 +1,235 @@
+@font-face {
+    font-family: PixelCode;
+    src: url('fonts/PixelCode.otf'),
+        url('fonts/PixelCode.woff'),
+        url('fonts/PixelCode.woff2');
+}
+
+@font-face {
+    font-family: slkscr;
+    src: url('fonts/slkscr-webfont.ttf'),
+        url('fonts/slkscr-webfont.woff');
+}
+
+@font-face {
+    font-family: AliceRegular;
+    src: url('fonts/Alice-Regular-webfont.ttf'),
+        url('fonts/Alice-Regular-webfont.woff');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    background: linear-gradient(to right, #00409A, #CE2F94);
+    background-clip: text;
+    -wekbit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: AliceRegular;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    font-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #00409A, #CE2F94);
+    transition: all .5s ease-in-out;
+}
+
+.darkmode{
+    filter: invert(1);
+    background: linear-gradient(to bottom right, #001e47, #580531);
+}
+
+main {
+    z-index: -1;
+    min-height: 800px;
+    height: 90%;
+    min-width: 500px;
+    width: 50%;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: inset 0px 0px 16px 2px rgba(0, 0, 0, 0.346);
+    background-color: #F4F4F4;
+}
+
+article {
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+article .gradientLine {
+    margin: 1rem auto;
+    background: linear-gradient(to bottom right, #00409A, #CE2F94);
+    height: 2px;
+    width: 90%;
+}
+
+article .topSection {
+    min-height: 15%;
+    position: relative;
+}
+
+article .topSection,
+article .skillSection {
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+}
+
+article .topSection .coordonnees {
+    padding: .5rem;
+    border-radius: 15px;
+    background-color: #F4F4F4;
+    font-family: AliceRegular;
+    box-shadow: 0px 0px 4px 2px #F4F4F4;
+}
+
+#shadow {
+    border-radius: 15px;
+    padding: .4rem .3rem 0;
+    width: 30%;
+    position: relative;
+    background: linear-gradient(to right, red, purple);
+}
+
+article .topSection .title {
+    display: flex;
+    width: 65%;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 3rem;
+    text-align: center;
+}
+
+article .topSection .title h1 {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    text-decoration: underline;
+}
+
+article .topSection .title i {
+    font-size: .8rem;
+    color: #CE2F94;
+    font-family: 'PixelCode';
+}
+
+
+article .skillSection {
+    width: 100%;
+    min-height: 30%;
+    font-family: "PixelCode";
+}
+
+article .skillSection h2 {
+    text-align: center;
+    margin-bottom: 1.3rem;
+}
+
+article .skillSection .skill {
+    width: 60%;
+}
+
+article .skillSection .skill ul li {
+    display: flex;
+    align-items: center;
+    font-size: .8rem;
+}
+
+article .skillSection .skill ul li:nth-of-type(2) {
+    padding: 1rem 0;
+}
+
+article .skillSection .skill ul li img {
+    max-width: 50px;
+    max-height: 50px;
+    filter: saturate(0);
+    float: left;
+    margin-right: .5rem;
+}
+
+article .skillSection .skill ul li span {
+    font-size: .7rem;
+    font-style: italic;
+    color: #00409A;
+}
+
+article .skillSection .soft {
+    width: 35%;
+}
+
+article .skillSection .soft ul li {
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+article .skillSection .soft ul li:nth-of-type(odd) {
+    margin: .8rem 5rem 0 0;
+    color: #00409A;
+}
+
+article .skillSection .soft ul li:nth-of-type(even) {
+    margin: .8rem 0 0 5rem;
+    color: #CE2F94;
+}
+
+article .skillSection .soft ul li:last-of-type {
+    color: black;
+    margin: 0;
+    padding-top: 1rem;
+    font-size: .7rem;
+    font-style: italic;
+}
+
+
+article .langsSection ul{
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+article .langsSection ul li i{
+    color: #00409A;
+}
+
+article .langsSection ul li:first-of-type span{
+    background: linear-gradient(to right, #002654, #ED2939);
+    background-clip: text;
+    -wekbit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+article .langsSection ul li:nth-of-type(2) span{
+    background: linear-gradient(to right, #C8102E, #012169);
+    background-clip: text;
+    -wekbit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+article .langsSection ul li:last-of-type span{
+    background: linear-gradient(to right, #ba0303, #f0d905 , #ba0303);
+    background-clip: text;
+    -wekbit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* article .langsSection ul li:nth-last-of-type(2) span{
+    background: linear-gradient(to right, #023479, #CE2F94);
+}
+
+article .langsSection ul li:last-of-type span{
+    background: linear-gradient(to right, #00409A, #CE2F94);
+} */
