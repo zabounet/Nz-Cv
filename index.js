@@ -27,8 +27,8 @@ document.addEventListener('DOMContentLoaded', () => {
     new QRCode(
         "QRCode", {
         text: document.location.href,
-        width: 80,
-        height: 80,
+        width: 100,
+        height: 100,
         colorDark: "#000000",
         colorLight: "#FFFFFF",
         correctLevel: QRCode.CorrectLevel.M

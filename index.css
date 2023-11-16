@@ -58,7 +58,7 @@ main {
     min-height: 800px;
     height: 90%;
     min-width: 500px;
-    width: 50%;
+    width: 60%;
     padding: 2rem;
     border-radius: 15px;
     box-shadow: inset 0px 0px 16px 2px rgba(0, 0, 0, 0.346);
@@ -116,7 +116,7 @@ article .topSection .title {
 }
 
 article .topSection .title h1 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     padding-bottom: 1rem;
     text-decoration: underline;
 }
@@ -227,6 +227,10 @@ article .langsSection ul li:last-of-type span {
     -webkit-text-fill-color: transparent;
 }
 
+article .experienceSection h2 {
+    text-align: center;
+}
+
 article .experienceSection li {
     display: flex;
     justify-content: space-around;
@@ -258,7 +262,7 @@ article .experienceSection li span:nth-of-type(3) {
 
 article .bottomSection{
     margin: auto;
-    width: 55%;
+    width: 45%;
     display: flex;
     justify-content: space-between;
 }
@@ -276,11 +280,27 @@ article .bottomSection .hobby ul div{
     padding: 0 1rem;
 }
 
-article .bottomSection .hobby ul div li{
+article .bottomSection .hobby ul div:first-of-type li:first-child{
     padding: .5rem 0;
+    font-size: 1.15rem;
     color: #CE2F94;
 }
 
-article .bottomSection .hobby ul div li:last-of-type{
+article .bottomSection .hobby ul div:last-of-type li:first-child{
+    padding: .5rem 0;
+    font-size: 1.15rem;
     color:#00409A
 }
+
+article .bottomSection .hobby ul div:first-of-type li:last-child{
+    padding: .5rem 0;
+    font-size: 1.15rem;
+    color:#00409A
+}
+
+article .bottomSection .hobby ul div:last-of-type li:last-child{
+    padding: .5rem 0;
+    font-size: 1.15rem;
+    color: #CE2F94;
+}
+
