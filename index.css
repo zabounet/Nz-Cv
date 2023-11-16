@@ -48,7 +48,7 @@ body {
     transition: all .5s ease-in-out;
 }
 
-.darkmode{
+.darkmode {
     filter: invert(1);
     background: linear-gradient(to bottom right, #001e47, #580531);
 }
@@ -195,41 +195,92 @@ article .skillSection .soft ul li:last-of-type {
 }
 
 
-article .langsSection ul{
-    display: flex; 
+article .langsSection ul {
+    display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
 }
-article .langsSection ul li i{
+
+article .langsSection ul li i {
     color: #00409A;
 }
 
-article .langsSection ul li:first-of-type span{
+article .langsSection ul li:first-of-type span {
     background: linear-gradient(to right, #002654, #ED2939);
     background-clip: text;
     -wekbit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-article .langsSection ul li:nth-of-type(2) span{
+article .langsSection ul li:nth-of-type(2) span {
     background: linear-gradient(to right, #C8102E, #012169);
     background-clip: text;
     -wekbit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-article .langsSection ul li:last-of-type span{
-    background: linear-gradient(to right, #ba0303, #f0d905 , #ba0303);
+article .langsSection ul li:last-of-type span {
+    background: linear-gradient(to right, #ba0303, #f0d905, #ba0303);
     background-clip: text;
     -wekbit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-/* article .langsSection ul li:nth-last-of-type(2) span{
-    background: linear-gradient(to right, #023479, #CE2F94);
+article .experienceSection li {
+    display: flex;
+    justify-content: space-around;
 }
 
-article .langsSection ul li:last-of-type span{
-    background: linear-gradient(to right, #00409A, #CE2F94);
-} */
+article .experienceSection li span:first-of-type {
+    width: 5%;
+}
+
+article .experienceSection li span:nth-child(2) {
+    width: 55%;
+}
+
+article .experienceSection li span:last-child {
+    width: 30%;
+}
+
+article .experienceSection li:first-of-type span {
+    font-weight: bold;
+}
+
+article .experienceSection li span:nth-of-type(2) {
+    color: #00409A;
+}
+
+article .experienceSection li span:nth-of-type(3) {
+    color: #CE2F94;
+}
+
+article .bottomSection{
+    margin: auto;
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+}
+
+article .bottomSection .hobby {
+    display: flex;
+    align-items: center;
+}
+
+article .bottomSection .hobby ul {
+    display: flex;
+}
+
+article .bottomSection .hobby ul div{
+    padding: 0 1rem;
+}
+
+article .bottomSection .hobby ul div li{
+    padding: .5rem 0;
+    color: #CE2F94;
+}
+
+article .bottomSection .hobby ul div li:last-of-type{
+    color:#00409A
+}
