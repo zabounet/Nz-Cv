@@ -30,11 +30,21 @@ h3,
 h4,
 h5,
 h6 {
+    
+    font-family: AliceRegular;
+}
+
+h1.WebkitBrowser,
+h2.WebkitBrowser,
+h3.WebkitBrowser,
+h4.WebkitBrowser,
+h5.WebkitBrowser,
+h6.WebkitBrowser {
     background: linear-gradient(to right, #00409A, #CE2F94);
+    background: -webkit-linear-gradient(to right, #00409A, #CE2F94);
     background-clip: text;
     -wekbit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: AliceRegular;
 }
 
 body {
@@ -54,7 +64,6 @@ body {
 }
 
 main {
-    z-index: -1;
     min-height: 800px;
     height: 90%;
     min-width: 500px;
@@ -206,21 +215,21 @@ article .langsSection ul li i {
     color: #00409A;
 }
 
-article .langsSection ul li:first-of-type span {
+article .langsSection ul li:first-of-type span.WebkitBrowser {
     background: linear-gradient(to right, #002654, #ED2939);
     background-clip: text;
     -wekbit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-article .langsSection ul li:nth-of-type(2) span {
+article .langsSection ul li:nth-of-type(2) span.WebkitBrowser {
     background: linear-gradient(to right, #C8102E, #012169);
     background-clip: text;
     -wekbit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-article .langsSection ul li:last-of-type span {
+article .langsSection ul li:last-of-type span.WebkitBrowser {
     background: linear-gradient(to right, #ba0303, #f0d905, #ba0303);
     background-clip: text;
     -wekbit-background-clip: text;
